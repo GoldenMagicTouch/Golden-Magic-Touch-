@@ -1,51 +1,293 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-<title>Golden Magic Touch</title>
-
-</head>
-
-<body style="font-family:Arial; text-align:center; background:#0B2D5C; color:white;">
-
-<h1 style="color:#D4AF37;">
-
-Golden Magic Touch
-
-</h1>
-
-<h2>
-
-Window Cleaning & Pressure Washing
-
-</h2>
-
-<p>
-
-Making Dirt Disappear Like Magic
-
-</p>
-
-<button style="
-
-background:#D4AF37;
-
-color:#0B2D5C;
-
-padding:15px 25px;
-
-border:none;
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Magic Touch | Window Cleaning & Pressure Washing</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+body{
+line-height:1.6;
+color:#333;
+}
+header{
+background:#0B2D5C;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+.logo{
+font-size:1.8rem;
 font-weight:bold;
-
-border-radius:5px;">
-
-Get Free Quote
-
+color:#D4AF37;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+.hero{
+height:90vh;
+background:linear-gradient(rgba(11,45,92,.75),rgba(11,45,92,.75)),
+url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+.hero-content h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+.hero-content p{
+font-size:1.4rem;
+margin-bottom:25px;
+}
+.btn{
+display:inline-block;
+background:#D4AF37;
+color:#0B2D5C;
+padding:14px 28px;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+margin:5px;
+}
+.btn:hover{
+opacity:.9;
+}
+section{
+padding:80px 10%;
+}
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#0B2D5C;
+}
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+.card h3{
+color:#0B2D5C;
+margin-bottom:15px;
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+.review{
+background:#f5f5f5;
+padding:25px;
+border-radius:10px;
+}
+.quote{
+background:#0B2D5C;
+color:white;
+}
+.quote form{
+max-width:700px;
+margin:auto;
+}
+.quote input,
+.quote textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:5px;
+}
+.quote button{
+background:#D4AF37;
+color:#0B2D5C;
+border:none;
+padding:15px 30px;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+}
+footer{
+background:#071d3d;
+color:white;
+text-align:center;
+padding:30px;
+}
+@media(max-width:768px){
+.hero-content h1{
+font-size:2.5rem;
+}
+header{
+flex-direction:column;
+}
+nav{
+margin-top:15px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">GMT</div>
+<nav>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#quote">Free Quote</a>
+</nav>
+</header>
+<section class="hero">
+<div class="hero-content">
+<h1>Golden Magic Touch</h1>
+<p>Professional Window Cleaning & Pressure Washing</p>
+<p>Making Dirt Disappear Like Magic</p>
+<a href="#quote" class="btn">Get Free Quote</a>
+<a href="tel:5555555555" class="btn">
+Call Now
+</a>
+</div>
+</section>
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="card">
+<h3>Window Cleaning</h3>
+<p>
+Interior & Exterior Cleaning
+<br>
+Screen Cleaning
+<br>
+Hard Water Stain Removal
+</p>
+</div>
+<div class="card">
+<h3>Pressure Washing</h3>
+<p>
+Driveways
+<br>
+Sidewalks
+<br>
+Patios
+<br>
+Decks
+</p>
+</div>
+<div class="card">
+<h3>House Washing</h3>
+<p>
+Vinyl Siding
+<br>
+Brick
+<br>
+Stucco
+<br>
+Exterior Refresh
+</p>
+</div>
+</div>
+</section>
+<section id="gallery">
+<h2 class="section-title">Before & After Results</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80">
+</div>
+</section>
+<section id="reviews">
+<h2 class="section-title">Customer Reviews</h2>
+<div class="reviews">
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>
+Amazing work on our windows.
+The house looks brand new.
+</p>
+<br>
+<strong>- Sarah M.</strong>
+</div>
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>
+Fast response and great pricing.
+Highly recommend.
+</p>
+<br>
+<strong>- John D.</strong>
+</div>
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>
+Our driveway had years of buildup.
+Now it looks incredible.
+</p>
+<br>
+<strong>- Lisa R.</strong>
+</div>
+</div>
+</section>
+<section id="quote" class="quote">
+<h2 class="section-title" style="color:white;">
+Request A Free Quote
+</h2>
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="email" placeholder="Email Address">
+<input type="text" placeholder="Property Address">
+<textarea rows="6"
+placeholder="Tell us about your project"></textarea>
+<button type="submit">
+Request Free Quote
 </button>
-
+</form>
+</section>
+<footer>
+<h3>Golden Magic Touch (GMT)</h3>
+<p>
+Window Cleaning & Pressure Washing
+</p>
+<p>
+Call: (555) 555-5555
+</p>
+<p>
+© 2026 Golden Magic Touch
+</p>
+</footer>
 </body>
-
 </html>
