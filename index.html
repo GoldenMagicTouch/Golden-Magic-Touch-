@@ -3,537 +3,334 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golden Magic Touch</title>
+<title>Golden Magic Touch | Window Cleaning & Pressure Washing</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#fff;
-    color:#222;
+background:#f8f9fb;
+color:#333;
 }
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-/* HEADER */
 
 header{
-    background:#04275b;
-    padding:15px 0;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+position:fixed;
+top:0;
+width:100%;
+background:rgba(11,45,92,.95);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
 
 .logo{
-    color:#f6b100;
-    font-size:32px;
-    font-weight:800;
-}
-
-.logo span{
-    display:block;
-    color:white;
-    font-size:12px;
-    letter-spacing:2px;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:25px;
+font-size:2rem;
+font-weight:700;
+color:#D4AF37;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:500;
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
 }
-
-.phone-btn{
-    background:#f6b100;
-    color:#04275b;
-    padding:12px 20px;
-    border-radius:6px;
-    text-decoration:none;
-    font-weight:700;
-}
-
-/* HERO */
 
 .hero{
-    min-height:85vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600')
-    center/cover;
-    display:flex;
-    align-items:center;
-}
-
-.hero-content{
-    max-width:650px;
-    color:white;
+height:100vh;
+background:
+linear-gradient(rgba(11,45,92,.75),rgba(11,45,92,.75)),
+url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+color:white;
 }
 
 .hero h1{
-    font-size:70px;
-    line-height:1;
-    margin-bottom:20px;
-}
-
-.hero h1 span{
-    color:#f6b100;
+font-size:4rem;
+margin-bottom:10px;
 }
 
 .hero p{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:15px;
+font-size:1.3rem;
+margin-bottom:25px;
 }
 
 .btn{
-    padding:15px 30px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    text-decoration:none;
-    font-weight:700;
+display:inline-block;
+background:#D4AF37;
+color:#0B2D5C;
+padding:15px 32px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+margin:5px;
+transition:.3s;
 }
 
-.btn-primary{
-    background:#f6b100;
-    color:#04275b;
+.btn:hover{
+transform:translateY(-3px);
 }
 
-.btn-secondary{
-    border:2px solid white;
-    color:white;
-}
-
-/* SERVICES */
-
-.services{
-    padding:80px 0;
+section{
+padding:90px 10%;
 }
 
 .section-title{
-    text-align:center;
-    color:#04275b;
-    margin-bottom:50px;
+text-align:center;
+font-size:2.5rem;
+color:#0B2D5C;
+margin-bottom:50px;
 }
 
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
 .card{
-    background:#fff;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
 }
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:25px;
+.card:hover{
+transform:translateY(-8px);
 }
 
 .card h3{
-    color:#04275b;
-    margin-bottom:15px;
+color:#0B2D5C;
+margin-bottom:15px;
 }
 
-.card ul{
-    padding-left:20px;
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+text-align:center;
 }
 
-/* BEFORE AFTER */
+.why-box{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
 
 .gallery{
-    background:#04275b;
-    padding:80px 0;
-    color:white;
-}
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 }
 
 .gallery img{
-    width:100%;
-    border-radius:10px;
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+border:4px solid #D4AF37;
 }
 
-/* FEATURES */
-
-.features{
-    padding:80px 0;
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
-.feature-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:30px;
-    text-align:center;
+.review{
+background:white;
+padding:25px;
+border-radius:15px;
+border-left:5px solid #D4AF37;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-.feature{
-    padding:20px;
+.quote{
+background:#0B2D5C;
+color:white;
 }
 
-.feature h4{
-    color:#04275b;
-    margin-bottom:10px;
+.quote form{
+max-width:700px;
+margin:auto;
 }
 
-/* TESTIMONIALS */
-
-.testimonials{
-    background:#04275b;
-    color:white;
-    padding:80px 0;
+.quote input,
+.quote textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
 }
 
-.testimonial-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+.quote button{
+background:#D4AF37;
+color:#0B2D5C;
+border:none;
+padding:15px 30px;
+font-weight:700;
+border-radius:8px;
+cursor:pointer;
 }
-
-.testimonial{
-    background:rgba(255,255,255,.08);
-    padding:25px;
-    border-radius:10px;
-}
-
-/* CONTACT */
-
-.contact{
-    padding:80px 0;
-}
-
-.contact-wrap{
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    gap:40px;
-}
-
-.contact-box{
-    background:#04275b;
-    color:white;
-    padding:30px;
-    border-radius:10px;
-}
-
-form{
-    display:grid;
-    gap:15px;
-}
-
-input,
-textarea,
-select{
-    padding:14px;
-    border:1px solid #ddd;
-    border-radius:6px;
-}
-
-textarea{
-    height:150px;
-}
-
-.submit-btn{
-    background:#f6b100;
-    color:#04275b;
-    font-weight:700;
-    border:none;
-    padding:15px;
-    cursor:pointer;
-}
-
-/* FOOTER */
 
 footer{
-    background:#021a3b;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#071d3d;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.call-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#D4AF37;
+color:#0B2D5C;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 @media(max-width:768px){
-
-.hero h1{
-    font-size:45px;
+.hero h1{font-size:2.5rem;}
+nav{display:none;}
+section{padding:70px 7%;}
 }
-
-.contact-wrap{
-    grid-template-columns:1fr;
-}
-
-nav{
-    display:none;
-}
-
-}
-
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="container navbar">
-
-<div class="logo">
-GMT
-<span>GOLDEN MAGIC TOUCH</span>
-</div>
+<div class="logo">GMT</div>
 
 <nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Reviews</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#quote">Quote</a>
 </nav>
-
-<a href="#" class="phone-btn">(555) 123-4567</a>
-
-</div>
 </header>
 
 <section class="hero">
-<div class="container">
-
-<div class="hero-content">
-<h1>GOLDEN <span>MAGIC TOUCH</span></h1>
-
-<p>
-Window Cleaning & Pressure Washing That Brings Your Property Back To Life.
-</p>
-
-<div class="hero-buttons">
-<a href="#" class="btn btn-primary">Get Free Quote</a>
-<a href="#" class="btn btn-secondary">Call Now</a>
-</div>
-</div>
-
+<div>
+<h1>Golden Magic Touch</h1>
+<p>Professional Window Cleaning & Pressure Washing</p>
+<p>Making Dirt Disappear Like Magic ✨</p>
+<a href="#quote" class="btn">Get Free Quote</a>
+<a href="tel:3802036076" class="btn">Call Adam</a>
 </div>
 </section>
 
-<section class="services">
+<section id="services">
+<h2 class="section-title">Our Services</h2>
 
-<div class="container">
-
-<h2 class="section-title">
-Professional Cleaning Solutions
-</h2>
-
-<div class="service-grid">
+<div class="services">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800">
-
-<div class="card-content">
-<h3>Window Cleaning</h3>
-<ul>
-<li>Interior & Exterior</li>
-<li>Screen Cleaning</li>
-<li>Hard Water Stain Removal</li>
-<li>Residential & Commercial</li>
-</ul>
-</div>
+<h3>🪟 Window Cleaning</h3>
+<p>Interior & Exterior Cleaning, Screen Cleaning, and Hard Water Stain Removal.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1617104551722-3b2d51366459?w=800">
-
-<div class="card-content">
-<h3>Pressure Washing</h3>
-<ul>
-<li>Driveways</li>
-<li>Sidewalks</li>
-<li>Patios & Decks</li>
-<li>House Washing</li>
-</ul>
+<h3>💦 Pressure Washing</h3>
+<p>Driveways, Sidewalks, Patios, Decks, and Exterior Surfaces.</p>
 </div>
+
+<div class="card">
+<h3>🏠 House Washing</h3>
+<p>Vinyl Siding, Stucco, Brick, and Full Exterior Refreshes.</p>
 </div>
 
 </div>
-
-</div>
-
 </section>
 
-<section class="gallery">
+<section>
+<h2 class="section-title">Why Choose GMT?</h2>
 
-<div class="container">
-
-<h2 class="section-title" style="color:white;">
-Before & After
-</h2>
-
-<div class="gallery-grid">
-
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800">
-<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800">
-<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800">
-<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800">
-
+<div class="why">
+<div class="why-box">⭐ Free Estimates</div>
+<div class="why-box">⭐ Fast Response</div>
+<div class="why-box">⭐ Reliable Service</div>
+<div class="why-box">⭐ Satisfaction Guaranteed</div>
 </div>
-
-</div>
-
 </section>
 
-<section class="features">
+<section id="gallery">
+<h2 class="section-title">Before & After Results</h2>
 
-<div class="container">
-
-<h2 class="section-title">
-Why Choose Golden Magic Touch?
-</h2>
-
-<div class="feature-grid">
-
-<div class="feature">
-<h4>Family Owned</h4>
-<p>We treat every home like our own.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80">
 </div>
-
-<div class="feature">
-<h4>Fully Insured</h4>
-<p>Your property is protected.</p>
-</div>
-
-<div class="feature">
-<h4>Free Estimates</h4>
-<p>No pressure, no obligation.</p>
-</div>
-
-<div class="feature">
-<h4>Fast Response</h4>
-<p>Quick and reliable service.</p>
-</div>
-
-<div class="feature">
-<h4>Satisfaction Guaranteed</h4>
-<p>We aren't happy until you are.</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<section class="testimonials">
+<section id="reviews">
+<h2 class="section-title">Customer Reviews</h2>
 
-<div class="container">
-
-<h2 class="section-title" style="color:white;">
-What Customers Say
-</h2>
-
-<div class="testimonial-grid">
-
-<div class="testimonial">
-★★★★★
-<p>"Amazing work on our windows and driveway."</p>
+<div class="reviews">
+<div class="review">⭐⭐⭐⭐⭐<br><br>Amazing work. Our windows have never looked better.</div>
+<div class="review">⭐⭐⭐⭐⭐<br><br>Fast, professional, and affordable.</div>
+<div class="review">⭐⭐⭐⭐⭐<br><br>The driveway looks brand new again.</div>
 </div>
-
-<div class="testimonial">
-★★★★★
-<p>"Professional, affordable and reliable."</p>
-</div>
-
-<div class="testimonial">
-★★★★★
-<p>"My house has never looked this good."</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<section class="contact">
+<section id="quote" class="quote">
 
-<div class="container">
+<h2 class="section-title" style="color:white;">Request a Free Quote</h2>
 
-<div class="contact-wrap">
+<form action="https://formspree.io/f/xojzjdzy" method="POST">
 
-<div class="contact-box">
-<h2>Get Your Free Estimate</h2>
-<br>
-<p>Call us today:</p>
-<h3>(555) 123-4567</h3>
-</div>
+<input type="text" name="name" placeholder="Full Name" required>
 
-<form>
+<input type="tel" name="phone" placeholder="Phone Number" required>
 
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email Address">
-<input type="text" placeholder="Phone Number">
+<input type="email" name="email" placeholder="Email Address" required>
 
-<select>
-<option>Select Service</option>
-<option>Window Cleaning</option>
-<option>Pressure Washing</option>
-</select>
+<input type="text" name="address" placeholder="Property Address">
 
-<textarea placeholder="Tell us about your project"></textarea>
+<textarea name="message" rows="6" placeholder="Tell us about your project" required></textarea>
 
-<button class="submit-btn">
-REQUEST MY FREE QUOTE
-</button>
+<button type="submit">Request Quote</button>
 
 </form>
-
-</div>
-
-</div>
 
 </section>
 
 <footer>
-© 2025 Golden Magic Touch. All Rights Reserved.
+<h2>Golden Magic Touch</h2>
+<p>Window Cleaning & Pressure Washing</p>
+<p>Owner: Adam</p>
+<p>📞 380-203-6076</p>
+<p>Free Estimates Available</p>
+<p>© 2026 Golden Magic Touch</p>
 </footer>
+
+<a href="tel:3802036076" class="call-btn">
+📞 Call Adam
+</a>
 
 </body>
 </html>
